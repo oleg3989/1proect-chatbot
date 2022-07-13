@@ -3,6 +3,7 @@ from telebot import types
 import os
 
 token = os.environ.get('telegramBot')
+print(token)
 bot = telebot.TeleBot(token)
 @bot.message_handler(commands =['start'])
 def start(message):
